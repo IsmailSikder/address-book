@@ -1,0 +1,22 @@
+{
+  "name": "address-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsmailSikder/address-book.git"
+  },
+  "author": "ismail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsmailSikder/address-book/issues"
+  },
+  "homepage": "https://github.com/IsmailSikder/address-book#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
