@@ -67,3 +67,10 @@ mongoose.connect(collectionsStr,
         .then(()=>res.send(address))
         .catch(err=>console.log(err))
     })
+
+    app.delete('/delete/:id',(req,res)=>{
+
+        Address.remove({_id:req.params.id})
+        .then(()=>res.send('Removed'))
+        .catch(err=>console.error(err))
+    })
