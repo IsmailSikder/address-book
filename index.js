@@ -23,3 +23,22 @@ mongoose.connect(collectionsStr,
     {useNewUrlParser: true, useUnifiedTopology: true})
     .then(console.log('connected to db'))
     .catch(err=>console.log(err))
+
+    //adding to the address-book 
+    app.post('/registar',(req,res)=>{
+        console.log(req.body)
+        name= req.body.name
+        email= req.body.email
+        phoneNumber= req.body.phoneNumber
+        place= req.body.place
+
+        let newAddress = new Address({
+            name:name,
+            email:email,
+            phoneNumber,
+            place: place
+        })
+        newAddress.save()
+        .then(address=>res.send(address))
+        .catch(err=>console.log(err))
+    })
