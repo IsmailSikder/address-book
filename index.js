@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.listen(3000,()=>console.log('listening to 3000'))
 
 // getting collection string from mongo atlas
-const collectionsStr = 'mongodb+srv://msikder:msikder08@cluster0.n8b3k.mongodb.net/address-book?retryWrites=true&w=majority';
+const collectionsStr = 'mongodb+srv://msikder:<password>@cluster0.n8b3k.mongodb.net/<db-name>?retryWrites=true&w=majority';
 
 const mongoose = require('mongoose')
 
